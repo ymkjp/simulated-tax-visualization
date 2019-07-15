@@ -95,11 +95,11 @@ numeral.register('locale', 'jp', {
 })
 
 const createData = () => {
-  const monthlyInsuranceFeeTable = Array.from({length: 7}, (_, i) => {
+  const monthlyInsuranceFeeTable = Array.from({ length: 7 }, (_, i) => {
     return (i + 1) * 1000
   })
 
-  const annualTaxableIncomeTable = Array.from({length: 202}, (_, i) => {
+  const annualTaxableIncomeTable = Array.from({ length: 202 }, (_, i) => {
     return i * 100 * 1000
   })
 

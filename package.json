@@ -1,7 +1,7 @@
 {
   "name": "simulated-tax-visualization",
-  "version": "0.1.0",
-  "description": "",
+  "version": "0.1.1",
+  "description": "[![Build Status](https://travis-ci.com/ymkjp/simulated-tax-visualization.svg?branch=master)](https://travis-ci.com/ymkjp/simulated-tax-visualization)",
   "scripts": {
     "test": "npm-run-all lint",
     "lint": "npm-run-all lint:**",
@@ -57,7 +57,7 @@
       ]
     ]
   },
-  "main": "index.js",
+  "main": "tool/project.bash",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/ymkjp/simulated-tax-visualization.git"
