@@ -7,6 +7,11 @@ _project () {
     yarn run start
   }
 
+  version() {
+    DIR="$(dirname "${BASH_SOURCE:-$0}")"
+    node -pe "require('${DIR}/package.json').version"
+  }
+
   _info () {
     MESSAGE="${1:-''}"
     echo "[$(basename "$0")] INFO: ${MESSAGE}"
