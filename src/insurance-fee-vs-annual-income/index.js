@@ -1,6 +1,6 @@
 
 /**
- * Calculate after-tax insurance fee per month
+ * Calculate after-tax insurance fee per month as at 2018
  * @see https://codepen.io/ymkjp/pen/bPygPa
  * @param {Number} mInsuranceFee Monthly insurance fee
  * @param {Number} yTaxableIncome Annual taxable income
@@ -14,6 +14,12 @@ const calcAfterTaxInsuranceFeePerMonth = (mInsuranceFee, yTaxableIncome) => {
   return (yiFee - (itExemption * itRate) - (rtExemption * rtRate)) / 12
 }
 
+/**
+ * Return tax rate
+ * @see https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2260.htm
+ * @param yTaxableIncome
+ * @returns {number}
+ */
 const getIncomeTaxRate = (yTaxableIncome) => {
   if (yTaxableIncome < 1950000) {
     return 0.05
@@ -32,10 +38,22 @@ const getIncomeTaxRate = (yTaxableIncome) => {
   }
 }
 
+/**
+ * Return tax rate
+ * @see https://ja.wikipedia.org/wiki/%E5%B8%82%E7%94%BA%E6%9D%91%E6%B0%91%E7%A8%8E
+ * @param yTaxableIncome
+ * @returns {number}
+ */
 const getResidentialTaxRate = (yTaxableIncome) => {
   return 0.1
 }
 
+/**
+ * Return exemption amount
+ * @see https://www.jili.or.jp/knows_learns/basic/tax/premium.html
+ * @param yiFee
+ * @returns {number}
+ */
 const calcIncomeTaxExemption = (yiFee) => {
   if (yiFee <= 20000) {
     return yiFee
@@ -47,6 +65,13 @@ const calcIncomeTaxExemption = (yiFee) => {
     return 40000
   }
 }
+
+/**
+ * Return exemption amount
+ * @see https://www.jili.or.jp/knows_learns/basic/tax/premium.html
+ * @param yiFee
+ * @returns {number}
+ */
 const calcResidentialTaxExemption = (yiFee) => {
   if (yiFee <= 12000) {
     return yiFee
@@ -93,11 +118,10 @@ const createData = () => {
       })
     }
   })
-  const data = {
+  return {
     labels: annualTaxableIncomeTable.map(v => numeral(v).format('$0,0')),
     datasets: datasets
   }
-  return data
 }
 
 const options = {
