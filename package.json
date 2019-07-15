@@ -13,26 +13,21 @@
     "watch:shell": "onchange  --delay 1000 'tool/**/*.*sh' -- npm-run-all lint:shell",
     "watch:md": "onchange  --delay 1000 '*.md' -- npm-run-all lint:md",
     "prestart": "yarn install",
-    "start": "npm-run-all clean lint watch"
+    "start": "npm-run-all lint watch"
   },
   "devDependencies": {
-    "argparse": "^1.0.10",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
-    "babel-eslint": "^8.2.6",
+    "babel-eslint": "^10.0.2",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-flow": "^6.23.0",
-    "babelify": "^8.0.0",
-    "brfs": "^2.0.0",
-    "browserify": "^16.2.2",
-    "eslint-plugin-flowtype": "^2.50.0",
-    "flow-bin": "^0.79.1",
-    "markdownlint-cli": "^0.13.0",
+    "eslint-plugin-flowtype": "^3.11.1",
+    "flow-bin": "^0.102.0",
+    "markdownlint-cli": "^0.17.0",
     "npm-run-all": "^4.1.3",
-    "onchange": "^4.1.0",
-    "standard": "^11.0.1",
-    "uuid": "^3.3.2"
+    "onchange": "^6.0.0",
+    "standard": "^13.0.2"
   },
   "standard": {
     "parser": "babel-eslint",
