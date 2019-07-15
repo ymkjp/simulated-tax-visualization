@@ -1,7 +1,7 @@
 {
-  "name": "simulated-tax-visualization",
-  "version": "0.1.1",
-  "description": "[![Build Status](https://travis-ci.com/ymkjp/simulated-tax-visualization.svg?branch=master)](https://travis-ci.com/ymkjp/simulated-tax-visualization)",
+  "name": "taxation-visualizer",
+  "version": "0.2.0",
+  "description": "[![Build Status](https://travis-ci.com/ymkjp/taxation-visualizer.svg?branch=master)](https://travis-ci.com/ymkjp/taxation-visualizer)",
   "scripts": {
     "test": "npm-run-all lint",
     "lint": "npm-run-all lint:**",
@@ -60,12 +60,12 @@
   "main": "tool/project.bash",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/ymkjp/simulated-tax-visualization.git"
+    "url": "git+ssh://git@github.com/ymkjp/taxation-visualizer.git"
   },
   "author": "Kenta Yamamoto <ymkjp@jaist.ac.jp>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ymkjp/simulated-tax-visualization/issues"
+    "url": "https://github.com/ymkjp/taxation-visualizer/issues"
   },
-  "homepage": "https://github.com/ymkjp/simulated-tax-visualization"
+  "homepage": "https://github.com/ymkjp/taxation-visualizer"
 }

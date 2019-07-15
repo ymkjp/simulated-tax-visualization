@@ -1,6 +1,6 @@
-# simulated-tax-visualization
+# taxation-visualizer
 
-[![Build Status](https://travis-ci.com/ymkjp/simulated-tax-visualization.svg?branch=master)](https://travis-ci.com/ymkjp/simulated-tax-visualization)
+[![Build Status](https://travis-ci.com/ymkjp/taxation-visualizer.svg?branch=master)](https://travis-ci.com/ymkjp/taxation-visualizer)
 
 Get started:
 

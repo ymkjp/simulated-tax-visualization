@@ -1,6 +1,6 @@
 
 /**
- * Calculate after-tax insurance fee per month as at 2018
+ * Calculate after-tax insurance fee per month as at 2018 in Japan
  * @see https://codepen.io/ymkjp/pen/bPygPa
  * @param {Number} mInsuranceFee Monthly insurance fee
  * @param {Number} yTaxableIncome Annual taxable income
